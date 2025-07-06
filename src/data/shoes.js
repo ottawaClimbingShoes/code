@@ -59,7 +59,7 @@ const shoes = [
     size: [36.5, 37.0, 37.5, 38.0, 38.5, 39.0, 39.5],
     price: 145,
     sale:25,
-    image: '/EVOLV_V6.WEBP',
+    image: '/EVOLV_V6.jpg',
     details: {
       aggressiveness: 'Moderate',
       durability: 'High',
@@ -73,7 +73,7 @@ const shoes = [
     size: [36.0, 36.5, 37.0, 37.5, 38.0, 38.5, 39.0],
     price: 99,
     sale:15,
-    image: '/LaSportiva_finales.WEBP',
+    image: '/LaSportiva_finales.jpg',
     details: {
       aggressiveness: 'Neutral',
       durability: 'Very High',
