@@ -1,38 +1,139 @@
+/* Remove default margin/padding and set full height */
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #2c2c2c;
+}
+
+/* Make the main container fill the viewport height */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Make content-wrap fill remaining space */
+.content-wrap {
+  flex-grow: 1; /* fills all available vertical space */
+  width: 100%;
+}
+
+/* Optional: remove any padding/margin inside Header and content-wrap if present */
+header, .content-wrap {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.header-text{
+  color: #ffffff;
+}
+
+.main1{
+  background-color: #f0f2f5 ;
+}
+
+
+.shoe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5rem;
+  padding: 1rem;
+}
+
+.sale{
+  color: rgb(249, 20, 20);
+  font-weight: 900;
+}
+
+.no-drag {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.shoe-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .shoe-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 480px) {
+  .shoe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.header-style{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.checkout-container {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  gap: 1.25rem; /* spacing between fields */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkout-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.checkout-input,
+.checkout-textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.checkout-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
 }
