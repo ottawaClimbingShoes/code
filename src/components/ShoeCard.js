@@ -14,8 +14,7 @@ const ShoeCard = ({ shoe }) => {
         <Link to={`/shoe/${shoe.id}`}>{shoe.name}</Link>
       </h3>
 
-      {/* Only show sale if it exists */}
-      {shoe.sale && <p className='sale'>{shoe.sale}%</p>}
+      {shoe.sale && <p className='sale'>{shoe.sale}% this week only! </p>}
 
       <p >{shoe.price} $</p>
     </div>

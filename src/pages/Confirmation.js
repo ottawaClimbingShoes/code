@@ -6,7 +6,7 @@ const Confirmation = () => {
   return (
     <div style={{ padding: '2rem' }}>
       <h2>Thank you for your purchase!</h2>
-      <p>Please rate your checkout experience:</p>
+      <p>Please help us improve your experience by rating your checkout experience:</p>
 
       <div style={{ fontSize: '2rem', margin: '1rem 0' }}>
         {[1, 2, 3, 4, 5].map((star) => (

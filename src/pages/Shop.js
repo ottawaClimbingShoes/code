@@ -38,8 +38,9 @@ const availableSizes = Array.from(
   return (
     <div>
       <h2>Climbing Shoes</h2>
+      
 
-      {/* Filters */}
+      
       <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', justifyContent: 'flex-end', paddingRight: "2rem"  }}>
         <input
           type="text"
@@ -58,14 +59,12 @@ const availableSizes = Array.from(
         </select>
       </div>
 
-      {/* Shoe Cards Grid */}
       <div className="shoe-grid">
         {paginatedShoes.map((shoe) => (
           <ShoeCard key={shoe.id} shoe={shoe} />
         ))}
       </div>
 
-      {/* Pagination Controls */}
       <div style={{ marginTop: '3rem', textAlign: 'center' }}>
         {Array.from({ length: totalPages }, (_, i) => (
           <button

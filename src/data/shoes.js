@@ -54,20 +54,6 @@ const shoes = [
     },
   },
   {
-    id: 6,
-    name: 'Evolv V6',
-    size: [36.5, 37.0, 37.5, 38.0, 38.5, 39.0, 39.5],
-    price: 145,
-    sale:25,
-    image: '/EVOLV_V6.jpg',
-    details: {
-      aggressiveness: 'Moderate',
-      durability: 'High',
-      bestFor: 'Indoor, gym-to-crag transitions',
-      description: 'Comfortable fit with just enough downturn for performance and support.',
-    },
-  },
-  {
     id: 7,
     name: 'La Sportiva Finales',
     size: [36.0, 36.5, 37.0, 37.5, 38.0, 38.5, 39.0],
@@ -131,6 +117,20 @@ const shoes = [
       durability: 'Medium',
       bestFor: 'Bouldering, competition',
       description: 'Sensitive slipper with flexible sole and split-sole construction for precision.',
+    },
+  },
+  {
+    id: 6,
+    name: 'Evolv V6',
+    size: [36.5, 37.0, 37.5, 38.0, 38.5, 39.0, 39.5],
+    price: 145,
+    sale:25,
+    image: '/EVOLV_V6.jpg',
+    details: {
+      aggressiveness: 'Moderate',
+      durability: 'High',
+      bestFor: 'Indoor, gym-to-crag transitions',
+      description: 'Comfortable fit with just enough downturn for performance and support.',
     },
   },
   {
